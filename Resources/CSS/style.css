@@ -2,6 +2,7 @@ div {
   border: 1px solid black;
 }
 
+/*                   HEADER                   */
 .header p {
   color: MediumAquamarine;
   padding: 0px 5px;
@@ -36,4 +37,27 @@ div {
   text-decoration: underline;
   padding: 5px 12px;
   display: inline-block;
+}
+
+/*                  MAIN BODY             */
+
+.container {
+  display: flex;
+
+
+}
+
+.column {
+  margin: auto 5px;
+
+}
+
+.column .large {
+  width: 630px;
+}
+.column .medium {
+  width: 300px;
+}
+.column .small {
+  width: 240px;
 }
