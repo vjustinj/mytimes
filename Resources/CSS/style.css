@@ -1,10 +1,13 @@
+div {
+  border: 1px solid black;
+}
 
 .header p {
   color: MediumAquamarine;
   padding: 0px 5px;
 }
 
-ul {
+#navlist {
   list-style-type: none;
 }
 
@@ -23,16 +26,14 @@ ul {
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 5px;
+  flex-grow: 1;
 }
 .nav {
   display: flex;
-  justify-content: flex-end;
 }
 
-li {
+#navlist li {
   text-decoration: underline;
-  text-align: right;
-  display: inline-flex;
   padding: 5px 12px;
-  justify-content: flex-end;
+  display: inline-block;
 }
