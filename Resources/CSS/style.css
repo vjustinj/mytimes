@@ -1,15 +1,22 @@
-div {
-  border: 1px solid black;
-}
+
 
 /*                   HEADER                   */
-.header p {
+
+nav {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.sitelogo span {
   color: MediumAquamarine;
   padding: 0px 5px;
 }
 
-#navlist {
-  list-style-type: none;
+nav span a {
+  color: black;
+  text-decoration: underline;
+  padding: 5px 12px;
+  display: inline-block;
 }
 
 .header {
@@ -33,31 +40,167 @@ div {
   display: flex;
 }
 
-#navlist li {
+/*  ------------------ MAIN BODY --------------------*/
+
+h1, .container p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.imagebackground h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+}
+
+
+#mainstory h1 {
+  font-size: 40px;
+}
+
+.story {
+  flex: 1 0 300px;
+}
+
+.container {
+  display: flex;
+  margin: 5px 5px;
+}
+
+.column {
+  margin: 0px 5px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.bite-box {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.bit-box-container {
+  background-color: WhiteSmoke;
+}
+
+
+#news-bites h1 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.column.large {
+  width: 630px;
+
+}
+.column.medium {
+  width: 300px;
+}
+.column.small {
+  width: 240px;
+  flex-direction: column;
+}
+
+.imagebackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.two-story {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.bite-box p {
+  font-size: 12px;
+  font-family: Verdana;
+  color: DimGray;
+}
+
+/* ---------------Background Images ---------------- */
+.imagebackground#mainstory {
+  background-image: url(img-story-main.png);
+
+}
+.imagebackground#earth {
+  background-image: url(img-story-2.png);
+
+}
+.imagebackground#camera {
+  background-image: url(img-story-3.png);
+
+}
+.imagebackground#cat {
+  background-image: url(img-story-1.png);
+}
+
+/* -------------------- FOOTER ------------------------*/
+
+.footer-container {
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 100%;
+}
+
+.footlogo h1 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footnav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-bottom: 20px;
+}
+
+#foot-nav-list li {
   text-decoration: underline;
   padding: 5px 12px;
   display: inline-block;
 }
 
-/*                  MAIN BODY             */
+.copyright {
+  position: absolute;
+  margin-top: 20px;
 
-.container {
-  display: flex;
-
-
-}
-
-.column {
-  margin: auto 5px;
-
-}
-
-.column .large {
-  width: 630px;
-}
-.column .medium {
-  width: 300px;
-}
-.column .small {
-  width: 240px;
 }
